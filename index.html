@@ -3,63 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boba Vibe - Bubble Tea Кафе</title>
+    <title>Boba Vibe - Премиум Bubble Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-    
-    <div class="container">
-        <header>
-            <a href="#" class="logo">Boba<span>Vibe</span></a>
+    <!-- Шапка -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">BobaVibe</a>
             <nav>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
-        </header>
-        
-        <main>
-            <section class="hero">
-                <div class="hero-content">
-                    <h1>Насладитесь <span>идеальным</span> Bubble Tea</h1>
-                    <p class="subtitle">Попробуйте наши авторские рецепты с натуральными ингредиентами. Свежие фрукты, качественный чай и нежные шарики боба - идеальное сочетание вкуса и текстуры.</p>
-                    
-                    <div class="buttons">
-                        <a href="#" class="btn btn-primary">Выбрать напиток</a>
-                        <a href="#" class="btn btn-secondary">Узнать больше</a>
-                    </div>
-                    
-                    <div class="stats">
-                        <div class="stat-card">
-                            <div class="stat-number">50+</div>
-                            <p class="stat-text">Уникальных вкусов на любой вкус</p>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">100%</div>
-                            <p class="stat-text">Натуральные ингредиенты без консервантов</p>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">5 мин</div>
-                            <p class="stat-text">Среднее время приготовления вашего заказа</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-image">
-                    <img src="./img/coffee.png" alt="Bubble Tea">
-                </div>
-            </section>
-        </main>
-    </div>
-    <script src="main.js"></script>
+        </div>
+    </header>
 
+    <!-- Главная секция -->
+    <section id="home">
+        <div class="hero-bg"></div>
+        <div class="create-bubbles" id="bubbles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Искусство Bubble Tea в каждом глотке</h1>
+                    <p class="hero-subtitle">Откройте для себя премиальный вкус традиционного тайваньского чая с натуральными ингредиентами и авторскими рецептами от наших мастеров</p>
+                    <div class="buttons">
+                        <a href="#menu" class="btn btn-primary">Посмотреть меню</a>
+                        <a href="#about" class="btn btn-secondary">О нас</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./img/coffee.png" alt="Премиальный Bubble Tea">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu">
+        <div class="container">
+            <h2 class="section-title">Наше меню</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="./img/milk.jpg" alt="Классический Bubble Tea">
+                    <h3>Классический молочный</h3>
+                    <p>Традиционный тайваньский рецепт с черным чаем, свежим молоком и шариками тапиоки</p>
+                    <div class="price">290 ₽</div>
+                </div>
+                <div class="menu-card">
+                    <img src="./img/trop.jpg" alt="Фруктовый Bubble Tea">
+                    <h3>Тропический микс</h3>
+                    <p>Освежающий зеленый чай с манго, маракуйей и кокосовыми желейными шариками</p>
+                    <div class="price">320 ₽</div>
+                </div>
+                <div class="menu-card">
+                    <img src="./img/match.jpg" alt="Матча Bubble Tea">
+                    <h3>Японская матча</h3>
+                    <p>Насыщенный чай матча с миндальным молоком и медовыми жемчужинами</p>
+                    <div class="price">350 ₽</div>
+                </div>
+                <div class="menu-card">
+                    <img src="./img/choco.jpg" alt="Шоколадный Bubble Tea">
+                    <h3>Шоколадная страсть</h3>
+                    <p>Ароматный черный чай с темным шоколадом, карамелью и шоколадными шариками</p>
+                    <div class="price">330 ₽</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Наше кафе">
+                </div>
+                <div class="about-text">
+                    <h2 class="about-title">Наша философия</h2>
+                    <p class="about-description">BobaVibe - это не просто кафе, а пространство, где рождаются новые вкусовые ощущения. Мы сочетаем вековые традиции тайваньского чаепития с современными тенденциями миксологии.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <h3 class="feature-title">Натуральные ингредиенты</h3>
+                            <p class="feature-description">Мы используем только свежие фрукты, органический чай и натуральные сиропы без искусственных добавок</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3 class="feature-title">Ручное приготовление</h3>
+                            <p class="feature-description">Каждый напиток готовится вручную с учетом всех тонкостей традиционной технологии</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3 class="feature-title">Авторские рецепты</h3>
+                            <p class="feature-description">Наши мастера постоянно разрабатывают новые уникальные вкусовые комбинации</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3 class="feature-title">Экологичная упаковка</h3>
+                            <p class="feature-description">Все стаканы и трубочки изготовлены из биоразлагаемых материалов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Наши контакты</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+                <div class="contact-info">
+                  
+                        <h3 class="info-title">Адрес</h3>
+                        <p class="info-text">ул. Тверская, 18, Москва</p>
+                
+                    
+                        <h3 class="info-title">Телефон</h3>
+                        <p class="info-text">+7 (999) 123-45-67</p>
+                    
+                    
+                        <h3 class="info-title">Часы работы</h3>
+                        <p class="info-text">Ежедневно с 10:00 до 22:00</p>
+                 
+                    
+                        <h3 class="info-title">Социальные сети</h3>
+                        <p class="info-text">@bobavibe_cafe</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <a href="#home" class="footer-logo">BobaVibe</a>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Главная</a>
+                <a href="#menu" class="footer-link">Меню</a>
+                <a href="#about" class="footer-link">О нас</a>
+                <a href="#contact" class="footer-link">Контакты</a>
+            </div>
+            <p class="copyright">© 2023 BobaVibe. Все права защищены</p>
+        </div>
+    </footer>
 </body>
 </html>
